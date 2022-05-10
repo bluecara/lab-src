@@ -1,4 +1,35 @@
 # Coding Conventions
+## Overview
++ base on PSR : <https://www.php-fig.org/psr/psr-2/>
+
+## File
++ Tags : `<?php` / `<?=` 태그만 사용. PHP code만 존재하는 파일은 `?>` 태그 생략
++ Encoding : UTF-8로만 작성
++ Extension : html로 파일 저장. 단, common/include 형태는 php로 저장
++ `'` 홀따옴표 사용
++ 들여쓰기 : 2개 스페이스. 탭 사용 안 함
+
+## Namespace
++ 
+
+## Class
++ `StudlyCaps` 규칙으로 작성
+    ### Constants
+    + 모두 대문자 또는 밑줄`_`로 선언
+    ### Methods
+    + `camelCase`로 작성
+
+## 
+## 
+## 
+
+
+----------------------------------
+## Overview
+https://psr.kkame.net/accepted/psr-1-basic-coding-standard   
+https://www.php-fig.org/psr/psr-2/
+
+<code>code</code>
 
 ## Example
 1.
@@ -8,19 +39,6 @@
   + 3-2
     + 3-3
 
-<code>code</code>
-
-`code`
-----------------------------------
-## Overview
-https://psr.kkame.net/accepted/psr-1-basic-coding-standard   
-https://www.php-fig.org/psr/psr-2/
-
-
-
-
-
-----------------------------------
 ## 시스템 디렉토리 규칙 (신규 제작시)
 ## URI 규칙
 ## 파일명 생성 규칙
