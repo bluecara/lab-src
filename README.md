@@ -1,10 +1,12 @@
 # Coding Conventions
 
 ### 1. Overview
-* base on PSR : <https://www.php-fig.org/psr/psr-2/>
+* base on PSR : https://www.php-fig.org/psr/psr-2/
 <br><br>
 
 ### 2. Basic
+* Default
+    + 괄호, 공백 및 중괄호의 배치, 공백에 유의
 * File
     + `<?php` / `<?=` 태그만 사용
     + PHP code만 존재 → `?>` 태그 생략
@@ -20,10 +22,9 @@
 * Indenting
     + 4 space
     + tab 사용 안함
-* 인수 목록이 여러줄로 표시할 경우, 각 줄에 한 번 들여쓰기 추가
 <br><br>
 
-### Class
+### Class (클래스)
 * 클래스명은 `StudlyCaps` 규칙 사용
 * `_` 은 사용 안함
 * 여는 중괄호 / 닫는 중괄호는 반드시 다음줄에 명시
@@ -57,6 +58,7 @@
         // method body
     }
     ```
+    > + 인수 목록이 여러줄로 표시할 경우, 각 줄에 한 번 들여쓰기 추가
     ```
     public function aVeryLongMethodName(
         ClassTypeHint $arg1,
@@ -92,21 +94,139 @@
     $foo->bar($arg1);
     Foo::bar($arg2, $arg3);
     ```
+    
+    #### Anonymous - 익명
+    ```
+    $instance = new class {};
+    ```
 
-### Control Structures
+### Control (제어)
 * 제어 구조 키워드 다음에 하나의 공백 O
 * 여는 괄호 뒤에 공백 X
 * 닫는 괄호 앞에 공백 X
 * 닫는 괄호와 여는 중괄호 사이에 하나의 공백 O
-* 본문은 한 번 ==들여쓰기== O
+* 본문은 한 번 **들여쓰기** O
 * 닫는 중괄호는 몸체 뒤의 다음 줄 O
     #### if, elseif, else
+    ```
+    if ($expr1) {
+        // if body
+    } elseif ($expr2) {
+        // elseif body
+    } elseif (($expr3) || ($expr4)) {
+        // elseif body
+    } else {
+        // else body;
+    }
+    ```
+    + 조건문이 2개 이상일 경우 여러줄로 표시
+    ```
+    if (
+        $expr1
+        && $expr2
+    ) {
+        // if body
+    } elseif (
+        $expr3
+        && $expr4
+    ) {
+        // elseif body
+    }
+    ```
+    
+    #### for, foreach
+    ```
+    for ($i = 0; $i < 10; $i++) {
+        // for body
+    }
+    foreach ($iterable as $key => $value) {
+        // foreach body
+    }
+    ```
+    
+    #### while, do while
+    ```
+    while ($expr) {
+        // structure body
+    }
+    while (
+        $expr1
+        && $expr2
+    ) {
+        // structure body
+    }
+    ```
+    ```
+    do {
+        // structure body;
+    } while ($expr);
+    do {
+        // structure body;
+    } while (
+        $expr1
+        && $expr2
+    );
+    ```
+    
+    #### switch
+    ```
+    switch ($expr) {
+        case 0:
+            echo 'First case, with a break';
+            break;
+        case 1:
+            echo 'Second case, which falls through';
+            break;
+        case 2:
+        case 3:
+        case 4:
+            echo 'Third case, return instead of break';
+            return;
+        default:
+            echo 'Default case';
+            break;
+    }
+    ```
+    
+    #### try, catch, finally
+    ```
+    try {
+        // try body
+    } catch (FirstThrowableType $e) {
+        // catch body
+    } catch (OtherThrowableType | AnotherThrowableType $e) {
+        // catch body
+    } finally {
+        // finally body
+    }
+    ```
 
-
-
-
-
-### 
+### Operators (연산자)
+    #### Unary (단항)
+    ```
+    $value++;
+    --$value;
+    $a = !$b;
+    $c = +$d;
+    $e = -$f;
+    ```
+    
+    #### Binary (이진)
+    ```
+    if ($a === $b) {
+        $foo = $bar ?? $a ?? $b;
+    } elseif ($a > $b) {
+        $foo = $a + $b * $c;
+    } elseif ($a <=> $c) {
+        $foo += $bar % $a & $b ** $c;
+    }
+    ```
+    
+    #### Ternary (3항)
+    ```
+    $variable = $foo ? 'foo' : 'bar';
+    $variable = $foo ?: 'bar';
+    ```
 
 ### Dataset
 
@@ -115,22 +235,6 @@
 ## Reference
 https://psr.kkame.net/accepted/psr-1-basic-coding-standard   
 https://www.php-fig.org/psr/psr-2/
-
-<code>code</code>
-
-## Example
-1.
-2.
-3.
-+ 3-1
-  + 3-2
-    + 3-3
-
-## 시스템 디렉토리 규칙 (신규 제작시)
-## URI 규칙
-## 파일명 생성 규칙
-## 코딩 규칙
-## Database
 
 ### MarkDown
 https://blog.naver.com/crud0626/222716270890   
