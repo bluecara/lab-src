@@ -5,8 +5,8 @@
 <br><br>
 
 ### 2. Basic
-* Default
-    + 괄호, 공백 및 중괄호의 배치, 공백에 유의
+* Common
+    + 괄호, 쉼표, 공백 및 중괄호의 배치에 유의
 * File
     + `<?php` / `<?=` 태그만 사용
     + PHP code만 존재 → `?>` 태그 생략
@@ -14,20 +14,20 @@
     + Character Encoding : BOM이 없는 UTF-8
 * Extension
     + html로 파일 저장
-    + php로 저장 : common/include 형태 등
-        - *.ajax.php / *.inc.php
+    + common/include 등의 형태는 php로 저장
+        - ex) *.ajax.php / *.inc.php
 * Quotation Mark
-    + HTML 태그 : `"`
+    + HTML / Query / 정규표현식 : `"`
     + PHP code / 자바스크립트 : `'`
 * Indenting
     + 4 space
-    + tab 사용 안함
+    + tab 사용 X
 <br><br>
 
 ### Class (클래스)
-* 클래스명은 `StudlyCaps` 규칙 사용
-* `_` 은 사용 안함
-* 여는 중괄호 / 닫는 중괄호는 반드시 다음줄에 명시
+* `StudlyCaps` 규칙 사용
+* `_` 사용 X
+* 여는 중괄호 / 닫는 중괄호는 **반드시** 다음줄에 명시
     ```
     class ClassName extends ParentClass
     {
@@ -50,7 +50,6 @@
     > + `camelCase`로 작성
     > + 이름 다음에 공백 X
     > + 여는 중괄호 / 닫는 중괄호는 반드시 다음줄에 명시
-    > + 괄호, 쉼표, 공백 및 중괄호의 배치에 유의
     > + 연산자 `&`를 사용하면 뒤에 공백 X
     ```
     public funciton fooBarBaz($arg1, &$arg2, $arg3 = [], &...$arg4)
@@ -95,7 +94,7 @@
     Foo::bar($arg2, $arg3);
     ```
     
-    #### Anonymous - 익명
+    #### Anonymous (익명)
     ```
     $instance = new class {};
     ```
@@ -228,7 +227,10 @@
     $variable = $foo ?: 'bar';
     ```
 
-### Dataset
+### Dataset (데이터셋)
+
+
+### JavaScript
 
 
 ----------------------------------
