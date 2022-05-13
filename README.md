@@ -228,9 +228,9 @@
     ```
 <br>
 
-### Operators (연산자)
-    #### Unary (단항)
-    - [x] Correct
+### 6. Operators (연산자)
+* Unary (단항)
+- [x] Correct
     ```
     $value++;
     --$value;
@@ -238,38 +238,38 @@
     $c = +$d;
     $e = -$f;
     ```
-    - [ ] Incorrect
-    
-    #### Binary (이진)
-    ```
-    if ($a === $b) {
-        $foo = $bar ?? $a ?? $b;
-    } elseif ($a > $b) {
-        $foo = $a + $b * $c;
-    } elseif ($a <=> $c) {
-        $foo += $bar % $a & $b ** $c;
-    }
-    ```
-    
-    #### Ternary (3항)
-    ```
-    $variable = $foo ? 'foo' : 'bar';
-    $variable = $foo ?: 'bar';
-    ```
-    
-    #### 연산
-    - [x] Correct
-    ```
-    a = b + c;
-    d = a + r;
-    ```
-    - [ ] Incorrect
-    ```
-    d = (a = b + c) + r;
-    ```
+- [ ] Incorrect
+
+* Binary (이진)
+```
+if ($a === $b) {
+    $foo = $bar ?? $a ?? $b;
+} elseif ($a > $b) {
+    $foo = $a + $b * $c;
+} elseif ($a <=> $c) {
+    $foo += $bar % $a & $b ** $c;
+}
+```
+
+* Ternary (3항)
+```
+$variable = $foo ? 'foo' : 'bar';
+$variable = $foo ?: 'bar';
+```
+
+#### 7. 연산
+- [x] Correct
+```
+a = b + c;
+d = a + r;
+```
+- [ ] Incorrect
+```
+d = (a = b + c) + r;
+```
 <br><br>
 
-### Comment (주석)
+### 8. Comment (주석)
 ```
 /**
  * @brief 기본설명
@@ -291,14 +291,18 @@
 ```
 <br><br>
 
-### Dataset (데이터셋)
+### 9. Dataset (데이터셋)
+
 <br><br>
+
+<hr>
 
 ### JavaScript
 * https://ui.toast.com/fe-guide/ko_CODING-CONVENTION
 * `const`를 `let`보다 위에 선언
 * `var` 사용금지
-<br><br>
+
+<hr>
 
 ### CSS
 * 들여쓰기 금지. 단 중괄호`{ }`가 중첩되는 경우 예외
