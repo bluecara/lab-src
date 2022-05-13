@@ -1,7 +1,7 @@
 # Coding Conventions
 
 ### 1. Overview
-* 협업 엽두해서 (쉽게 읽히는) 좋은 코드로 작성하기
+* 협업을 중점으로 (쉽게 읽히는) 좋은 코드로 작성하기
 * base on PSR : https://www.php-fig.org/psr/psr-2/
 * https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
 <br><br>
@@ -10,7 +10,15 @@
 * Common
     + 괄호, 쉼표, 공백 및 중괄호`{}`의 배치에 유의
     + 숫자로 시작 X
-    + 약어 사용 X    
+    + 약어 사용 X
+    + 괄호 `()` 사이에 공백 X
+    + 인수 목록 각 쉼표 앞에 공백 X, 쉼표 뒤에 공백 하나 O
+        ```
+        bar();
+        bar(...['foo','bar']);
+        $foo->bar($arg1);
+        Foo::bar($arg2, $arg3);
+        ```
 * File
     + `<?php` / `<?=` 태그만 사용
     + PHP code만 존재 → `?>` 태그 생략
@@ -23,8 +31,8 @@
     |common/include|*.php|
     |ajax|*.ajax.php|
 * Quotation Mark
-    + HTML / Query / reqular expressions : `"`
-    + PHP code / Javascript : `'`
+    + HTML / Query / reqular expressions : 쌍타옴표 `"`
+    + PHP code / Javascript : 홀따옴표 `'`
 * Indenting
     + 4 space
     + tab 사용 X
@@ -49,7 +57,7 @@
 * 명사 사용
 * `StudlyCaps` 규칙 사용
 * under_score `_` 사용 X
-* 여는 중괄호 `{` / 닫는 중괄호 `}` 는 **반드시** 다음줄에 명시
+* 여는 중괄호`{` , 닫는 중괄호`}` 는 **반드시** 다음줄에 명시
     - [x] Correct
     ```
     class ClassName extends ParentClass
@@ -66,7 +74,7 @@
 
     #### 3-1. Constants
     > + 모두 대문자와 under_score `_` 만으로 선언
-    > + public / private / protect 위치 순서
+    > + public, private, protect 위치 순서
     ```
     public $FOO = null;
     public static int $BAR = 0;
@@ -74,15 +82,14 @@
 
     #### 3-2. Methods & Functions
     > + 이름 다음에 공백 X
-    > + 여는 중괄호 / 닫는 중괄호는 반드시 다음줄에 명시
-    > + 연산자 `&`를 사용하면 뒤에 공백 X
+    > + 연산자 `&` 를 사용하면 뒤에 공백 X
     ```
     public funciton fooBarBaz($arg1, &$arg2, $arg3 = [], &...$arg4)
     {
         // method body
     }
     ```
-    > + 인수 목록이 여러줄로 표시할 경우, 각 줄에 한 번 들여쓰기 추가
+    > + 인수 목록을 여러줄로 표시할 경우, 각 줄에 한 번 들여쓰기 추가
     ```
     public function aVeryLongMethodName(
         ClassTypeHint $arg1,
@@ -91,8 +98,7 @@
     ) {
         // method body
     }
-    ```
-    
+    ```    
     > + abstract와 final 선언이 있을 경우, 가시성 선언 앞에 선언
     ```
     abstract class ClassName
@@ -107,18 +113,7 @@
         }
     }
     ```
-    
-    > + 호출시 여는 괄호 사이에 공백 X
-    > + 여는 괄호 뒤에 공백 X
-    > + 닫는 괄호 앞에 공백 X
-    > + 인수 목록 각 쉼표 앞에 공백 X, 쉼표 뒤에 공백 하나 O
-    ```
-    bar();
-    bar(...['foo','bar']);
-    $foo->bar($arg1);
-    Foo::bar($arg2, $arg3);
-    ```
-    
+
     #### 3-3. Anonymous (익명)
     ```
     $instance = new class {};
@@ -133,9 +128,7 @@
 
 ### 5. Control (제어)
 * 제어 구조 키워드 다음에 하나의 공백 O
-* 여는 괄호 뒤에 공백 X
-* 닫는 괄호 앞에 공백 X
-* 닫는 괄호와 여는 중괄호 사이에 하나의 공백 O
+* 닫는 괄호 `)` 와 여는 중괄호 `{` 사이에 하나의 공백 O
 * 본문은 한 번 **들여쓰기** O
 * 닫는 중괄호는 몸체 뒤의 다음 줄 O
     #### if, elseif, else
@@ -151,25 +144,26 @@
     }
     ```
     + 조건문이 2개 이상일 경우 여러줄로 표시
-    ```
-    if (
-        $expr1
-        && $expr2
-    ) {
-        // if body
-    } elseif (
-        $expr3
-        && $expr4
-    ) {
-        // elseif body
-    }
-    ```
+        ```
+        if (
+            $expr1
+            && $expr2
+        ) {
+            // if body
+        } elseif (
+            $expr3
+            && $expr4
+        ) {
+            // elseif body
+        }
+        ```
     
     #### for, foreach
     ```
     for ($i = 0; $i < 10; $i++) {
         // for body
     }
+    
     foreach ($iterable as $key => $value) {
         // foreach body
     }
@@ -180,6 +174,7 @@
     while ($expr) {
         // structure body
     }
+    
     while (
         $expr1
         && $expr2
@@ -191,6 +186,7 @@
     do {
         // structure body;
     } while ($expr);
+    
     do {
         // structure body;
     } while (
@@ -230,7 +226,7 @@
         // finally body
     }
     ```
-<br><br>
+<br>
 
 ### Operators (연산자)
     #### Unary (단항)
