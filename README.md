@@ -26,7 +26,7 @@
     + HTML / Query / reqular expressions : `"`
     + PHP code / Javascript : `'`
 * Indenting
-    + 2 space
+    + 4 space
     + tab 사용 X
 * Naming
     + Class : `PascalCase`
