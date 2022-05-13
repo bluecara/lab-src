@@ -130,8 +130,8 @@
 * 제어 구조 키워드 다음에 하나의 공백 O
 * 닫는 괄호 `)` 와 여는 중괄호 `{` 사이에 하나의 공백 O
 * 본문은 한 번 **들여쓰기** O
-* 닫는 중괄호는 몸체 뒤의 다음 줄 O
-    #### if, elseif, else
+* 닫는 중괄호 `}` 는 몸체 뒤의 다음 줄 O
+    #### 5-1. if, elseif, else
     ```
     if ($expr1) {
         // if body
@@ -158,7 +158,7 @@
         }
         ```
     
-    #### for, foreach
+    #### 5-2. for, foreach
     ```
     for ($i = 0; $i < 10; $i++) {
         // for body
@@ -169,7 +169,7 @@
     }
     ```
     
-    #### while, do while
+    #### 5-3. while, do while
     ```
     while ($expr) {
         // structure body
@@ -195,7 +195,7 @@
     );
     ```
     
-    #### switch
+    #### 5-4. switch
     ```
     switch ($expr) {
         case 0:
@@ -214,7 +214,7 @@
     }
     ```
     
-    #### try, catch, finally
+    #### 5-5. try, catch, finally
     ```
     try {
         // try body
