@@ -45,10 +45,10 @@
         - ex) no1, no2
 <br><br>
 
-### Class (클래스)
+### 3. Class (클래스)
 * 명사 사용
 * `StudlyCaps` 규칙 사용
-* `_` 사용 X
+* under_score `_` 사용 X
 * 여는 중괄호 `{` / 닫는 중괄호 `}` 는 **반드시** 다음줄에 명시
     - [x] Correct
     ```
@@ -64,7 +64,7 @@
     }
     ```
 
-    #### Constants
+    #### 3-1. Constants
     > + 모두 대문자와 under_score `_` 만으로 선언
     > + public / private / protect 위치 순서
     ```
@@ -72,7 +72,7 @@
     public static int $BAR = 0;
     ```
 
-    #### Methods & Functions
+    #### 3-2. Methods & Functions
     > + 이름 다음에 공백 X
     > + 여는 중괄호 / 닫는 중괄호는 반드시 다음줄에 명시
     > + 연산자 `&`를 사용하면 뒤에 공백 X
@@ -119,19 +119,19 @@
     Foo::bar($arg2, $arg3);
     ```
     
-    #### Anonymous (익명)
+    #### 3-3. Anonymous (익명)
     ```
     $instance = new class {};
     ```
-<br><br>
+<br>
 
-### Variable (변수)
+### 4. Variable (변수)
 * 임시 변수명
     + integer : i, j, k, m, n
     + character : c, d, e
 <br><br>
 
-### Control (제어)
+### 5. Control (제어)
 * 제어 구조 키워드 다음에 하나의 공백 O
 * 여는 괄호 뒤에 공백 X
 * 닫는 괄호 앞에 공백 X
