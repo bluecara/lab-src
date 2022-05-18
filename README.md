@@ -325,6 +325,8 @@ d = (a = b + c) + r;
 ## Reference
 https://psr.kkame.net/accepted/psr-1-basic-coding-standard   
 https://www.php-fig.org/psr/psr-2/
+https://www.lesstif.com/laravelprog/php-psr-24445325.html
+https://psr.kkame.net/deprecated/psr-2-coding-style-guide
 
 ### MarkDown
 https://blog.naver.com/crud0626/222716270890   
@@ -332,8 +334,6 @@ https://gist.github.com/ihoneymon/652be052a0727ad59601
 https://blog.naver.com/sobrightlf/222535709749
 
 ### 참고
-https://psr.kkame.net/deprecated/psr-2-coding-style-guide
-https://www.php-fig.org/psr/psr-2/
 https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
 
 https://nuli.navercorp.com/data/convention/NHN_Coding_Conventions_for_Markup_Languages.pdf
