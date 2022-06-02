@@ -28,7 +28,8 @@
     |Kind|Extension|
     |---|:---:|
     |Default|*.html|
-    |common/include|*.php|
+    |common|*.php|
+    |include|*.inc.php|
     |ajax|*.ajax.php|
 * Quotation Mark
     + HTML / Query / reqular expressions : 쌍타옴표 `"`
