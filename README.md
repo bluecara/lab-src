@@ -85,8 +85,7 @@
     > + 이름 다음에 공백 X
     > + 연산자 `&` 를 사용하면 뒤에 공백 X
     ```
-    public funciton fooBarBaz($arg1, &$arg2, $arg3 = [], &...$arg4)
-    {
+    public funciton fooBarBaz($arg1, &$arg2, $arg3 = [], &...$arg4) {
         // method body
     }
     ```
