@@ -227,7 +227,7 @@
     }
     ```
     
-    ### 5-6. try, catch
+    #### 5-6. try, catch
     ```
     try {
         echo inverse(5) . "\n";
