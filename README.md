@@ -226,6 +226,16 @@
         // finally body
     }
     ```
+    
+    ### 5-6. try, catch
+    ```
+    try {
+        echo inverse(5) . "\n";
+        echo inverse(0) . "\n";
+    } catch (Exception $e) {
+        echo 'Caught exception: ',  $e->getMessage(), "\n";
+    }
+    ```
 <br>
 
 ### 6. Operators (연산자)
