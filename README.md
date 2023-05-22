@@ -58,7 +58,7 @@
 ### 3. Class (클래스)
 * 명사 사용
 * `StudlyCaps` 규칙 사용
-* under_score `_` 사용 X
+* hyphen `-` , under_score `_` 사용 X
 * 여는 중괄호`{` , 닫는 중괄호`}` 는 **반드시** 다음줄에 명시
     - [x] Correct
     ```
