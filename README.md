@@ -31,6 +31,7 @@
     |common|*.php|
     |include|*.inc.php|
     |ajax|*.ajax.php|
+    |model|*.model.php|
 * Quotation Mark
     + HTML / Query / reqular expressions : 쌍타옴표 `"`
     + PHP code / Javascript : 홀따옴표 `'`
