@@ -1,0 +1,9 @@
+version: '2.1'
+
+services:
+  docker:
+    image: docker
+    build: .
+    ports:
+      - 80:80
+      - 443:443
