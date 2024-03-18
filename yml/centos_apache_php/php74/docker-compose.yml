@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    container_name: ProjectName
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
+      - "8080:8080"
+      - "8081:8081"
+      - "8082:8082"
+      - "443:443"
+    volumes:
+      # change custom path
+      - D:/WorkSpacePath:/var/www
+    command: bash /run.sh
