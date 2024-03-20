@@ -2,6 +2,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/bluecara/lab-src)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/bluecara/lab-src)
 ![GitHub last commit](https://img.shields.io/github/last-commit/bluecara/lab-src)
+![GitHub Repo stars](https://img.shields.io/github/stars/bluecara/lab-src)
 
 # Coding Conventions
 
