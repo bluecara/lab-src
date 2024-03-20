@@ -6,8 +6,8 @@
 
 * CentOS, Nginx, node.js
 
-* Rocky 9.2, Nginx 1.20.1, PHP 7.4/8.2
+* Rocky `9.2`, Nginx `1.20.1`, PHP `7.4` `8.2`
 
 ### yml for Docker
 
-* CentOS 7, Apache 2.4, PHP 7.4
+* CentOS `7`, Apache `2.4`, PHP `7.4`
