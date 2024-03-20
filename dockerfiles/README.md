@@ -1,9 +1,13 @@
 # Dockerfiles
 
-### Dockerfile for local development environment
+### Dockerfiles for local development environment
 
-* CentOS, apache, php(5.3/5.6/7.1/7.4)
+* CentOS 6.10/8, Apache 2.2/2.4, PHP 5.3/5.6/7.1/7.4
 
-* CentOS, nginx, node.js
+* CentOS, Nginx, node.js
 
-* Rocky, nginx, php(7.4/8.2)
+* Rocky 9.2, Nginx 1.20.1, PHP 7.4/8.2
+
+### yml for Docker
+
+* CentOS 7, Apache 2.4, PHP 7.4
