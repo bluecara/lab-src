@@ -1,3 +1,6 @@
+![GitHub language count](https://img.shields.io/github/languages/count/bluecara/lab-src)
+
+
 # Coding Conventions
 
 ### 1. Overview
