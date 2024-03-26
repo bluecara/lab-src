@@ -1,6 +1,6 @@
 # Node.js / Express
 
-### study url
+### Study
 
 * https://opentutorials.org/course/2136
 

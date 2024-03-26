@@ -1,6 +1,6 @@
 # Python
 
-### study url
+### Study
 
 * https://wikidocs.net/7014
 
