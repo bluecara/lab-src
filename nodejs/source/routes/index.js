@@ -13,7 +13,7 @@ router.get('/dynamic', function(req, res) {
   for (var i=0; i<5; i++) {
     lis += '<li>coding</li>';
   }
-  var time = Date();  
+  var time = Date();
   var output = `
   <html>
     <head>
@@ -27,6 +27,10 @@ router.get('/dynamic', function(req, res) {
     </body>
   </html>`;
   res.send(output);
-})
+});
+
+router.get('/template', function(req, res) {
+  res.render('temp', {time: Date(), title: 'Jade'});
+});
 
 module.exports = router;

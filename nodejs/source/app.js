@@ -12,6 +12,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+// 소스 이쁘게
+app.locals.pretty = true;
 
 app.use(logger('dev'));
 app.use(express.json());
