@@ -1,5 +1,13 @@
 # Python
 
+### study url
+
+* https://wikidocs.net/7014
+
+<br><br>
+
+### Indexs
+
 * test300
   + 01_start : 001 ~ 010
   + 02_variable : 011 ~ 020
