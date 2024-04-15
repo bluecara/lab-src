@@ -49,7 +49,7 @@
         - ex) ClassName
     + Variable / Parameter : `camelCase`
         - ex) helloWorld
-    + Method / Function : `camelCase` + 동사/전치사
+    + Method / Function : 동사/전치사 + `camelCase`
         - ex) selectTable / countNumber / withUserId
     + Constant : `snake case`
         - ex) public $SET_NUMBER = 1;
