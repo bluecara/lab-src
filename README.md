@@ -30,7 +30,7 @@
     + PHP code만 존재 → `?>` 태그 생략
     + Type : Unix
     + Character Encoding : BOM이 없는 UTF-8
-* Extension    
+* Extension
     |Kind|Extension|
     |---|:---:|
     |Default|*.html|
@@ -58,7 +58,7 @@
         - ex) _privateVariableName = '';
     + under_score `_` 는 단어와 단어 조합할 때만 사용
         - ex) section_list
-    + under_score `_` 가 포함된 약속어는 숫자, 영문 소문자와 조합하여 
+    + under_score `_` 가 포함된 약속어는 숫자, 영문 소문자와 조합하여
         - ex) no1, no2
 <br><br>
 
@@ -106,7 +106,7 @@
     ) {
         // method body
     }
-    ```    
+    ```
     > + abstract와 final 선언이 있을 경우, 가시성 선언 앞에 선언
     ```
     abstract class ClassName
@@ -165,24 +165,24 @@
             // elseif body
         }
         ```
-    
+
     #### 5-2. for, foreach
     ```
     for ($i = 0; $i < 10; $i++) {
         // for body
     }
-    
+
     foreach ($iterable as $key => $value) {
         // foreach body
     }
     ```
-    
+
     #### 5-3. while, do while
     ```
     while ($expr) {
         // structure body
     }
-    
+
     while (
         $expr1
         && $expr2
@@ -194,7 +194,7 @@
     do {
         // structure body;
     } while ($expr);
-    
+
     do {
         // structure body;
     } while (
@@ -202,7 +202,7 @@
         && $expr2
     );
     ```
-    
+
     #### 5-4. switch
     ```
     switch ($expr) {
@@ -221,7 +221,7 @@
             break;
     }
     ```
-    
+
     #### 5-5. try, catch, finally
     ```
     try {
@@ -255,6 +255,10 @@
     $e = -$f;
     ```
 - [ ] Incorrect
+    ```
+    $value(++(++));
+    $value++ ++;
+    ```
 
 * Binary (이진)
 ```
@@ -339,13 +343,13 @@ d = (a = b + c) + r;
 
 ----------------------------------
 ## Reference
-https://psr.kkame.net/accepted/psr-1-basic-coding-standard   
+https://psr.kkame.net/accepted/psr-1-basic-coding-standard
 https://www.php-fig.org/psr/psr-2/
 https://www.lesstif.com/laravelprog/php-psr-24445325.html
 https://psr.kkame.net/deprecated/psr-2-coding-style-guide
 
 ### MarkDown
-https://blog.naver.com/crud0626/222716270890   
+https://blog.naver.com/crud0626/222716270890
 https://gist.github.com/ihoneymon/652be052a0727ad59601
 https://blog.naver.com/sobrightlf/222535709749
 
