@@ -58,7 +58,7 @@
         - ex) _privateVariableName = '';
     + under_score `_` 는 단어와 단어 조합할 때만 사용
         - ex) section_list
-    + under_score `_` 가 포함된 약속어는 숫자, 영문 소문자와 조합하여
+    + under_score `_` 가 포함된 약속어는 숫자, 영문 소문자와 조합하여 사용
         - ex) no1, no2
 <br><br>
 
@@ -383,7 +383,7 @@ BLOB 는 바이너리 데이터, TEXT 는 문자 데이터 저장에 유리하�
             ```
             1000-01-01 00:00:00 ~ 9999-12-31 23:59:59
             ```
-        - timestamp : INSERT, UPDATE 연산에 유리하다. (4바이트)
+        - timestamp : INSERT, UPDATE 연산에 유리하다. (4바이트) : 사용금지!
             ```
             1970-01-01 00:00:00 ~ 2037-01-19 03:14:07
             ```
@@ -423,6 +423,8 @@ BLOB 는 바이너리 데이터, TEXT 는 문자 데이터 저장에 유리하�
 * Primary Key
     + 영문 대문자로 작성
         - ex) `Table Name` + _PK
+    + auto increment 속성 지정
+    + `INT(10) UNSIGNED` 혹은 `BIGINT(20) UNSIGNED` 사용
 
 * Foreign Key
     + 영문 대문자로 작성
