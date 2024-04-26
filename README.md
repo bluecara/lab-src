@@ -320,7 +320,7 @@ d = (a = b + c) + r;
     + 직관적인 `기술형`으로 작성
         - 되도록 쉬운 단어 선택
         - 의미없는 숫자 뒤에 붙이지 않음
-    + `단수(singular)형`을 사용
+    + `단수(singular)형` 사용
         - ex) member : Yes / members : No
     + 공백을 포함시키지 않음
     + `설명 반드시 작성`
@@ -334,7 +334,7 @@ d = (a = b + c) + r;
     + 접두사 사용 금지
     + Engine : InnoDB
     + Charset : utf8 / utf8mb4
-    + Collation : utf8mb4_unicode_ci
+    + Collation : utf8mb4_unicode_ci / utf8mb4_general_ci
 
 * Column
     + `snake_case` 로 작성
@@ -344,9 +344,9 @@ d = (a = b + c) + r;
     + 데이터 유형을 이름으로 작성하지 않음
         - ex) abc_timestamp , abc_text
     + 한 단어는 8자리를 넘기지 않음
-    + 필수값 조건 꼭 넣기
+    + `필수값(Not NULL)` 조건 꼭 넣기
     + 가능하면 기본키의 이름을 `id` 로 사용 금지
-    + `소문자`로 작성
+    + `소문자` 로 작성
         - [X] Correct
         ```
         create_date, user_code
@@ -364,8 +364,8 @@ d = (a = b + c) + r;
 * Data type
     + Text
         - char(M) : 고정 길이를 가지는 문자열을 저장한다. (M : 0~255)
-        - varchar(M) : 가변 길이를 가지는 문자열을 저장하며, 후행 공백을 제거하지 않는다. (M : 0~65,535)
-M이 0~255 이면 문자길이+1byte, ~65,535 이면 문자길이+2byte
+        - varchar(M) : 가변 길이를 가지는 문자열을 저장하며, 후행 공백을 제거하지 않는다. (M : 0 ~ 65,535)<br>
+M이 0 ~ 255 이면 문자길이+1byte, ~65,535 이면 문자길이+2byte
         - tinyblob / tinytext : 1~255 개의 가변 길이를 가지는 문자열을 저장한다. (문자길이+1byte)
         - blob / text : 1~65,535 개의 가변 길이를 가지는 문자열을 저장한다. (문자길이+2byte)
 BLOB 는 바이너리 데이터, TEXT 는 문자 데이터 저장에 유리하다.
