@@ -11,7 +11,7 @@ services:
       # - "443:443"
     volumes:
       # change custom path
-      - D:/Works/thkc:/var/www/approot
+      - D:/Works/NewProject:/var/www/approot
     # command: bash /run.sh
 
 #Docker Networks
