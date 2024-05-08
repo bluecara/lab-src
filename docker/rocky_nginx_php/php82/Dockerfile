@@ -5,7 +5,7 @@ LABEL Name=RockyLinux-Nginx-PHP82 \
     Description=" \
 Rocky Linux 9.2 \
 Nginx 1.20.1 \
-PHP 8.2.12" \
+PHP 8.2.18" \
     BaseImage=rockylinux:9.2
 
 # Copy cop_files and set WORKDIR
@@ -15,7 +15,7 @@ WORKDIR /root/src
 ## Install packages
 RUN dnf -y update && \
     dnf -y install epel-release && \
-    dnf -y install nginx && \ 
+    dnf -y install nginx && \
     dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm && \
     dnf -y install dnf-utils && \
     dnf module reset php && \
@@ -37,7 +37,7 @@ RUN dnf -y update && \
 #     php -r "unlink('/root/src/composer-setup.php');" && \
 #     mv /root/src/composer.phar /usr/local/bin/composer && \
 #     chmod +x /usr/local/bin/composer
-    
+
 
 # Configure
 WORKDIR /var/www/approot
