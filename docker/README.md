@@ -12,6 +12,10 @@
 <br><br>
 
 ```
+docker-compose up -d
+```
+
+```
 docker run -it -d
     -p 8080:80
     -e VIRTUAL_HOST=http://my.project.co.kr
