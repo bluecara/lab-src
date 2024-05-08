@@ -15,7 +15,7 @@ WORKDIR /root/src
 ## Install packages
 RUN dnf -y update && \
     dnf -y install epel-release && \
-    dnf -y install nginx && \ 
+    dnf -y install nginx && \
     dnf -y install http://rpms.remirepo.net/enterprise/remi-release-9.rpm && \
     dnf -y install dnf-utils && \
     dnf module reset php && \
@@ -37,7 +37,7 @@ RUN dnf -y update && \
 #     php -r "unlink('/root/src/composer-setup.php');" && \
 #     mv /root/src/composer.phar /usr/local/bin/composer && \
 #     chmod +x /usr/local/bin/composer
-    
+
 
 # Configure
 WORKDIR /var/www/approot
