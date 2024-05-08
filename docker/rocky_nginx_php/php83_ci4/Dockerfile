@@ -5,7 +5,7 @@ LABEL Name=RockyLinux-Nginx-PHP83 \
     Description=" \
 Rocky Linux 9.2 \
 Nginx 1.20.1 \
-PHP 8.3.12" \
+PHP 8.3.6" \
     BaseImage=rockylinux:9.2
 
 # Copy cop_files and set WORKDIR
