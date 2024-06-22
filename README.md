@@ -438,6 +438,18 @@ d = (a = b + c) + r;
     + 일련번호 : 01 ~ 99 (선택)
         - ex) `Table Name` + `Column Name` + _IDX + {일련번호}
 
+* View Table
+    + 영문 대문자로 작성
+        - ex) V_ + `View Name`
+
+* Function
+    + 영문 대문자로 작성
+        - ex) FN_ + `Function Name`
+
+* Procedure
+    + 영문 대문자로 작성
+        - ex) SP_ + `Procedure Name`
+
 <br><br>
 
 <hr>
