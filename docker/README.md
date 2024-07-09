@@ -24,3 +24,14 @@ docker run -it -d
     -v {project_root}:/var/www/approot
     --name container-name {container_name}
 ```
+
+### 개행 문자를 제거 - vi
+```
+# 변경 방법 1
+:%s/^M//
+# 변경 방법 2
+:%s/\015//
+# 변경 방법 3 - 파일 포멧 변경 > 저장 > 다시 파일 열기 > 변경됨(ff: File Format)
+:set ff=unix
+:wq
+```
