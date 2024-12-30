@@ -1,0 +1,6 @@
+a = input("Input first value: ")
+b = input("Input second value: ")
+a=int(a)
+b=int(b)
+print("Result first:", a)
+print("Result second:", b)
